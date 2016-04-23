@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "571b6a742576ecf3576ea900",
+    "name": "Dickerson Rollins",
+    "gender": "male",
+    "email": "dickersonrollins@bittor.com",
+    "phone": "+1 (873) 578-2971",
+    "address": "145 School Lane",
+    "city": "3411, Stavanger",
+    "about": "Officia qui dolor deserunt duis proident commodo. Magna ipsum nulla sint qui nostrud exercitation ullamco nisi officia laboris magna tempor eiusmod. Eiusmod voluptate labore laboris ut sint ad consequat sint proident do adipisicing magna quis. Laboris laboris dolore mollit dolore consectetur nulla laboris consequat Lorem exercitation. Irure consequat velit id ea voluptate amet. Nisi consectetur esse pariatur et mollit.\r\n",
+    "registered": "2014-08-07T01:07:52 -02:00",
+    "latitude": -83.926943,
+    "longitude": -24.488296,
+    "relocate": true
+  },
+  {
+    "_id": "571b6a74fc1d6c4d5f72a2f3",
+    "name": "Jessie Hester",
+    "gender": "female",
+    "email": "jessiehester@bittor.com",
+    "phone": "+1 (970) 575-2972",
+    "address": "963 Sutton Street",
+    "city": "4944, Bergen",
+    "about": "Veniam excepteur magna est mollit nostrud. Veniam qui incididunt exercitation laboris officia tempor laborum pariatur dolor elit minim tempor. Eiusmod ea mollit est do occaecat do.\r\n",
+    "registered": "2015-05-25T03:29:23 -02:00",
+    "latitude": -14.825396,
+    "longitude": -130.664301,
+    "relocate": false
+  },
+  {
+    "_id": "571b6a74acb80b744ec40b03",
+    "name": "Christie Whitney",
+    "gender": "female",
+    "email": "christiewhitney@bittor.com",
+    "phone": "+1 (987) 553-3973",
+    "address": "993 Gotham Avenue",
+    "city": "4283, Oslo",
+    "about": "Nostrud velit commodo tempor ad velit consequat nisi ea officia ut labore. Consequat nisi eiusmod aute duis sit nulla. Nostrud nulla qui exercitation nisi excepteur labore anim exercitation quis enim anim amet culpa. Cillum commodo adipisicing consectetur elit ut incididunt occaecat tempor ea fugiat tempor. Nisi sunt esse ullamco ipsum ipsum aliqua enim occaecat ex. Nulla ex elit est et do eiusmod culpa nisi officia voluptate in culpa.\r\n",
+    "registered": "2016-04-17T04:03:36 -02:00",
+    "latitude": -18.866017,
+    "longitude": 86.553528,
+    "relocate": true
+  },
+  {
+    "_id": "571b6a74e84aa951cbdb9380",
+    "name": "Gallegos Adkins",
+    "gender": "male",
+    "email": "gallegosadkins@bittor.com",
+    "phone": "+1 (990) 444-3273",
+    "address": "701 Cooke Court",
+    "city": "2840, Stavanger",
+    "about": "Non magna reprehenderit non nisi labore nostrud excepteur cupidatat labore ipsum. Esse in id cupidatat non non proident sunt fugiat ea. Culpa dolore dolor labore cupidatat sit voluptate in in eu aliquip in incididunt. Amet aliqua magna do voluptate ad duis esse ipsum id velit laborum aute deserunt. Sit ea deserunt incididunt nostrud cillum id nulla. Magna pariatur consectetur sit consectetur excepteur nostrud aute ipsum reprehenderit dolor id aliquip cillum laborum.\r\n",
+    "registered": "2014-12-23T01:10:37 -01:00",
+    "latitude": 30.882997,
+    "longitude": -61.712616,
+    "relocate": false
+  },
+  {
+    "_id": "571b6a7453fab0bf65fe78b6",
+    "name": "Roberts Barnes",
+    "gender": "male",
+    "email": "robertsbarnes@bittor.com",
+    "phone": "+1 (857) 486-3038",
+    "address": "170 Danforth Street",
+    "city": "1903, Bergen",
+    "about": "Et consequat qui exercitation excepteur velit est deserunt dolor ipsum. Non occaecat laborum cupidatat consectetur irure adipisicing dolor ad. Laboris eiusmod sunt dolor duis sint aliquip eiusmod Lorem eiusmod pariatur duis officia. Sunt eiusmod esse nostrud aliqua labore cillum eu commodo non mollit nisi in esse consequat.\r\n",
+    "registered": "2014-08-11T03:23:14 -02:00",
+    "latitude": -27.397827,
+    "longitude": 43.503643,
+    "relocate": false
+  }
+]
