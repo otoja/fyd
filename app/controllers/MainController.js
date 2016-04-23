@@ -4,7 +4,7 @@
 
 'use strict';
 
-fyd.controller('MainController', function ($scope, Auth, NEO4JService) {
+fyd.controller('MainController', function ($scope, $q, Auth, NEO4JService) {
 
 //    $scope.$on('$viewContentLoaded',function(){
 //        if (!Auth.isLogedIn()){
@@ -12,7 +12,15 @@ fyd.controller('MainController', function ($scope, Auth, NEO4JService) {
 //        };
 //    });
 //    
-//    NEO4JService.generateJobOffersFromJSON();
+    var promisses = [];
+    promisses.push(NEO4JService.generateUeser());
+    promisses.push(NEO4JService.generateJobOffersFromJSON());
+
+    $q.all(promisses).then(function(response){
+        console.log("Data created in Neo4J");
+    });
+
+
     $scope.getNumber = function (num) {
         return new Array(num);
     };

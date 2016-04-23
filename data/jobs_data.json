@@ -1,15 +1,18 @@
 [
     {
-        "id":321,
+        "id": 321,
         "title": "Senior Software Engineer",
         "description": "Our developers build and create the technology on which much of the world’s energy supplies depend, fundamentally affecting the lives of hundreds of millions of people around the world. Our main products are RMS and Tempest, which are considered as among the best in class by users all over the world. Roxar Software Solutions has technology centers in Oslo and Stavanger where we develop high performance, interactive software for processing large volumes of scientific hydrocarbon reservoir data on powerful workstations. Our flagship products, RMS and Tempest, are highly rated by users all over the world. We look for enthusiastic developers to join the RMS team with the drive and ability to deliver reliable and attractive software for our clients around the world, whilst making a genuine contribution to our software engineering culture. Our project teams consist of highly skilled and motivated people across disciplines including domain experts, developers and testers. We work by agile methods and are determined to deliver code to the highest standards.We are now looking for a Senior Software Engineer for our RMS development team in Oslo.",
         "expireDate": "13.05.2016",
         "skills": [{
-                "id": 123,
-                "label": "C"
+                "label": "Python"
             }, {
-                "id": 234,
-                "label": "3D Computer graphics OpenGL"
+                "label": "Java"
+            }, {
+                "label": "ITIL"
+            }
+            , {
+                "label": "Linux/UNIX"
             }],
         "duties": "Analysis and Design. Analyze requirements and develop functional and technical specifications that provide solutions. User interface design and implementation Software development in C and Python. Profiling and optimizing Advanced debugging Team Work - work with other staff to efficiently and effectively coordinate work activities (SCRUM process)",
         "employer": {
@@ -19,19 +22,19 @@
         },
         "location": "Oslo",
         "industry": "IT",
-        "hits":20
+        "hits": 20
     },
     {
         "title": "IT/AV consultant",
         "description": "IT section provides IT and AV services to students and staff at the college's departments in Oslo, Rogaland and Bergen. Position is attached to the IT department, and IT manager as immediate superiors. There are currently seven positions associated section. Our IT environment is essential Microsoft based and consists of bl. A: Office, Exchange, IIS, SQL, Oracle, FS study administration system, LMS Its Learning, P360 and Visma Unique. Our communications platform is based both on traditional VC equipment and Skype for business.",
         "expireDate": "08.05.2016",
         "skills": [{
-                "id": 123,
-                "label": "Microsoft Office 2013"
-            }, {
-                "id": 234,
-                "label": "Skype for Business"
-            }],
+                "label": "ITIL"
+            },
+            {
+                "label": "AutoCAD"
+            }
+        ],
         "duties": "The score assigned to tasks related to the 1st line support for students and staff. Additionally applicable tasks: Operating / support of AV equipment. Maintenance / operation of PCs, servers and networks. Operating / support communications equipment (Skype, VK etc). Operation of Multifunction Printers. Troubleshooting",
         "employer": {
             "company": "VID university college",
@@ -47,11 +50,12 @@
         "description": "Hallingdal Kraft Nett AS is a distribution company owned by all municipalities in Hallingdal. The company has more than 1,600 substations and a network with a total length of approximately 3.600 km, up to 66 kV in addition to approximately 700 km of fiber-optic networks. The company has 70 employees and 23 300 network customers. Headquartered in Geilo with branches in Al, Gol and Nes. Our engineering staff is located at Gol with workspace in Hallingdal.",
         "expireDate": "05.15.2016",
         "skills": [{
-                "id": 123,
-                "label": "Experience from Telecom and service provider industry is an advantage"
+                "label": "TCPIP"
             }, {
-                "id": 234,
-                "label": "Wireless communications (BT, M2M, WiFi etc.)"
+                "label": "M2M"
+            },
+            {
+                "label": "TCL"
             }],
         "duties": "We seek a competent, structured and solution-focused individual who will receive the following challenges: Establishing and managing a project in Hallingdal to oversee the planning, design and development of smart services including welfare technology in close cooperation with municipalities Participate in the prioritization and coordination of fiber rollout in Hallingdal to facilitate smart home and welfare services Develop business concept around smart home and other services Collaborating with Network Alliance (where Hallingdal Kraft Nett AS is one of the owners), technology / platform provider, municipalities and end users",
         "employer": {
@@ -68,11 +72,14 @@
         "description": "We are looking for a committed IT technician summer job at one of our customers.You are an extrovert and sociable person and good at relationships. You must be proactive and self-motivated and with \"hometown pluck.\" You are keen to provide a great level of service to your colleagues.",
         "expireDate": "04.05.2016",
         "skills": [{
-                "id": 123,
                 "label": "Education in IT/computer"
             }, {
-                "id": 234,
-                "label": "Knowledge of network and server operations"
+                "label": "Linux/UNIX"
+            }, {
+                "label": "Tomcat"
+            }
+            , {
+                "label": "Administrator"
             }],
         "duties": "Operation and maintenance of servers and network. Installation and Configuration Support internal. Monitoring of security and procedures. Testing, setup and delivery of IT equipment. SAP skills a distinct advantage. Provide assistance using various operating systems (Ardis, SAP, Evatic, Web shop, Outlook).",
         "employer": {
@@ -89,11 +96,18 @@
         "description": "Department of Service Management consists of several sections that are responsible for the management and development of a number of key services to the police. Section ID issuance and control are responsible for solutions that support social objectives related to improved preparedness and vulnerability reduction. Combating illegal residence and terror, the disclosure of false and double identities, detection of and support for victims of trafficking are key social gains of the work. Border team wants to strengthen further with a skilled developer. Our mission is to create great tool to help police in their efforts to maintain a proper vetting on border and territory. To achieve this, high demands for security, availability and quality in our applications. Mobility has great focus, so that checks can be carried out regardless of geography. Police ICT services have a good team and a strong focus on skills development. We facilitate our employees can develop academically and socially. Since we are an organization changing the position will be under development, and changes must be expected over time.",
         "expireDate": "05.08.2016",
         "skills": [{
-                "id": 123,
                 "label": "Java"
             }, {
-                "id": 234,
-                "label": "Experience with front-end framework based on JavaScript, HTML5 and CSS3"
+                "label": "JAXB"
+            }, {
+                "label": "JAX-RS"
+            }, {
+                "label": "WS"
+            }, {
+                "label": "SOAP"
+            }
+            , {
+                "label": "REST API"
             }],
         "duties": "New and further development of applications. Assist with application architecture and framework for new and existing applications. Assisting in the production setting. Contribute \"code review\", testing and verification. Develop systems and installation documentation. Help solve 2nd and 3rd line events related to services. Contribute to the development of the academic community",
         "employer": {
@@ -110,11 +124,12 @@
         "description": "You become part of a professional community of dedicated and highly competent system and mobile developers who work methodically and purposefully to create new or refine existing solutions. You will work in a multidisciplinary team characterized by enthusiasm and cohesion, where the ambition is always to create solutions that can give people an easier life.",
         "expireDate": "05.15.2016",
         "skills": [{
-                "id": 123,
-                "label": "Native apps (iOS and/or Android)"
+                "label": "iOS"
             }, {
-                "id": 234,
                 "label": "JavaScript and React"
+            },
+            {
+                "label": "Android"
             }],
         "duties": "Develop the best mobile apps on the market Contribute to the design of good user experiences Participate in creative processes in multidisciplinary teams",
         "employer": {
@@ -131,10 +146,12 @@
         "description": "UIs IT is a modern and innovative IT department in a hectic university environment. Much of the work we do is contained in transversal projects, together with the administration, academic staff and students. We are built around ITIL framework, follow Prince2 project methodology and is ISO27001 certified. The main area of ​​work will be in conjunction with digital examination, and services related to the Common Digital Services. Tasks will be professional support, technical support and work to see new opportunities in a field that develops in very high speed. The device works in an interdisciplinary UiS and contributes in several interdisciplinary forums.",
         "expireDate": "03.05.2016",
         "skills": [{
-                "id": 123,
-                "label": "Knowledge of ITIL, Prince2 and what ISO27001"
-            }, {
-                "id": 234,
+                "label": "ITIL"
+            },{
+                "label": "Prince2"
+            },{
+                "label": "ISO27001"
+            },{
                 "label": "Operation of technical equipment"
             }],
         "duties": "Consultations. System management and system responsibility. Support. Training",
@@ -152,11 +169,13 @@
         "description": "USIT - University Center for Information is responsible for the operation, expansion, user monitoring and development of IT solutions and services for the University of Oslo. USIT has also significant operations linked to operations and project tasks on behalf of the university and college sector. USIT has a large IT professional environment with more than 200 employees and focuses on providing its employees challenging and educational tasks with good opportunities for professional development. We have free temporary position in Group B Application platforms with tasks in the operation of Web applications on Linux . We are seeking a person who wants to work in a creative and enjoyable environment with Open Source products, exciting technology and new solutions. Beside being a permanent member of webdriftsgruppa you will work closely with other organizations on USIT and the University. Work will be performed in close collaboration with colleagues and system owners. You are structured, service-minded, positive to new challenges and enjoy working with Linux-based systems and services.",
         "expireDate": "03.05.2016",
         "skills": [{
-                "id": 123,
-                "label": " Linux/UNIX"
+                "label": "Linux/UNIX"
             }, {
-                "id": 234,
-                "label": "Perl,Python,PHP"
+                "label": "Perl"
+            }, {
+                "label": "Python"
+            }, {
+                "label": "PHP"
             }],
         "duties": "Operation and operation development of key Linux-based Web services based on Apache, JBoss, Resin, Perl and PHP. Operation and adaptation of web-based IT systems for teaching and learning. Monitoring of 3rd line support queries. Automation of operation and monitoring of the above mentioned solutions",
         "employer": {
