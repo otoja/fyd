@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="fyd">
+    <head>
+        <title>FYD - NAV 2.0</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="css/scrolling-nav.css">
+        <link rel="stylesheet" href="lib/popoto-1/css/popoto.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jobs.css">
+    </head>
+    <body  ng-controller="MainController">
+        <div>
+            <nav class="container-fluid navbar navbar-static-top grey-level1">
+                <p class="navbar-text pull-right grey-level3-text"><i class="glyphicon glyphicon-menu-hamburger"></i></p>
+                <p class="navbar-text pull-right grey-level3-text"><a ng-href="#/profile/1">My profile</a></p>
+            </nav>
+        </div>
+
+        <div ng-view=""></div>
+        <div ng-controller="LoginController">
+            <div ng-include="'./app/partials/login.html'"></div>
+        </div>
+
+        <script type="text/javascript" src="lib/jquery/jquery-2.2.3.js"></script>
+        <script type="text/javascript" src="lib/angular/angular.js"></script>
+        <script type="text/javascript" src="lib/angular/angular-route.js"></script>
+        <script type="text/javascript" src="lib/angular/angular-sanitize.js"></script>
+        <script type="text/javascript" src="lib/angular/angular-cookies.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="lib/jquery-ui/jquery-ui.js"></script>
+        <script type="text/javascript" src="lib/underscore/undrscore.js"></script>
+        <script type="text/javascript" src="lib/angular/autocomplete.js"></script>
+        <script src="lib/popoto-1/js/d3.v3.min.js" charset="utf-8"></script>
+        <script src="lib/popoto-1/js/popoto.min.js" charset="utf-8"></script>
+
+        <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" rel="stylesheet" type="text/css" />
+        <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
+
+        <script type="text/javascript" src="app/app.js"></script>
+        <!--<script type="text/javascript" src="app/controllers/SkillsController.js"></script>-->
+        <script type="text/javascript" src="app/controllers/MainController.js"></script>
+        <script type="text/javascript" src="app/controllers/LoginController.js"></script>
+        <script type="text/javascript" src="app/controllers/JobsController.js"></script>
+        <script type="text/javascript" src="app/controllers/ProfileController.js"></script>
+
+        <script type="text/javascript" src="app/services/Auth.js"></script>
+        <script type="text/javascript" src="app/services/UserProfileService.js"></script>    
+        <script type="text/javascript" src="app/services/transform/Neo4JRessponseTransform.js"></script>
+        <script type="text/javascript" src="app/services/NEO4JService.js"></script>
+        <script type="text/javascript" src="app/services/JobService.js"></script>
+
+
+        <script type="text/javascript" src="utils/autofill.js"></script>
+        <script type="text/javascript" src="utils/popoto-config.js"></script>
+        <script type="text/javascript" src="utils/tools.js"></script>
+        <script type="text/javascript" src="utils/plotify.js"></script>
+    </body>
+</html>

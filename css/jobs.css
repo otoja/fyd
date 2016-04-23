@@ -1,0 +1,71 @@
+
+/* 
+    Created on : 2016-04-21, 22:54:03
+    Author     : Kamila Przychodzen <kamila.przychodzen@gmail.com>
+*/
+
+.job-entity>.boxcontainer{
+    height: 300px;
+    cursor: pointer;
+}
+
+.label-light{
+    display: inline-block;
+    border: 1px solid #D9D9D9;
+    margin: 5px;
+    color:#5A5A5A;
+    background-color: #f8f8f8;
+}
+.skill-label{
+    line-height: 25px;
+    font-size: 10pt;
+    vertical-align: baseline;
+
+}
+.skill-level{
+    font-size: 10px;
+    padding: 3px 3px 3px 15px;
+    text-align: center;
+    min-width: 42px !important;
+}
+
+.skill-remove{
+    z-index: 10000;
+    padding: 0;
+    font-size: 12pt;
+    margin: -8px -12px;
+}
+.employer-data{
+    margin-bottom: 20px;
+    font-size: 9pt;
+
+}
+.deadline-data{
+    font-size: 9pt;
+    vertical-align: baseline;
+    line-height: 15px
+}
+
+.job-title{
+    padding: 0px;
+    padding-top:5px;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.job-description{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.jobs-summary{
+    font-weight:600;
+    padding-bottom: 40px;
+}
+.job-details-wrapper{
+    opacity: .7;
+}
+
+.job-description-content{
+
+}

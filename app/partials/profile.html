@@ -1,0 +1,115 @@
+<section class="center-block text-center text-uppercase row"><p class="search-job-button col-md-4 col-md-offset-4"><a href="#/">Start looking for jobs here</a></p></section>
+<section id="intro" class="intro-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="boxcontainer">
+                    <h1 class="red-text">CV</h1>
+                    <div class="row">
+                        <div class="col-md-6"><p>me04042016CV.doc</p></div>
+                        <div class="col-md-6"><div class="buttonwrap"><a class="ghostbutton">UPLOAD NEW CV</a></div></div>
+                    </div>
+                </div>
+
+                <div class="boxcontainer" >
+                    <h1 class="red-text">SKILLS</h1>
+                    <p>Put in your skills and rank how proficient you are at each type of skill. More skills = more opportunities.</p>
+                    <input class="col-md-12" id="skills" placeholder="What is your expertise?" />
+                    <div class="skills-box ng-scope" >
+                        <div class="label label-light" ng-repeat="selectedSkill in userSkills" ng-mouseenter="selectedSkill.remove = true" ng-mouseleave="selectedSkill.remove = false;">
+                            <span class="skill-label ng-binding">{{selectedSkill.label}}</span>
+                            <span class="skill-remove pull-right" ng-if="selectedSkill.remove"><i class="glyphicon glyphicon-remove-circle"  ng-click="removeSkill(selectedSkill)" ></i></span>
+                            <span class="skill-level pull-right" >
+                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 1, 'glyphicon-star-empty':selectedSkill.level < 1 }" ng-click="updateSkill(selectedSkill, 1)" title="Beginner"></i>
+                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 2, 'glyphicon-star-empty':selectedSkill.level < 2 }" ng-click="updateSkill(selectedSkill, 2)" title="Novice"></i>
+                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 3, 'glyphicon-star-empty':selectedSkill.level < 3 }" ng-click="updateSkill(selectedSkill, 3)" title="Intermeddiate"></i><br>
+                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 4, 'glyphicon-star-empty':selectedSkill.level < 4 }" ng-click="updateSkill(selectedSkill, 4)" title="Advanced"></i>
+                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 5, 'glyphicon-star-empty':selectedSkill.level < 5 }" ng-click="updateSkill(selectedSkill, 5)" title="Expert"></i>
+                            </span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="boxcontainer">
+                    <h1 class="red-text">JOB SEARCH STATISTICS</h1>
+                    <ul class="nav nav-tabs nav-justified" id="profileTabs">
+                        <li role="presentation"><a data-target="#jobActivity" aria-controls="jobActivity" role="tab" data-toggle="tab">Activity</a></li>
+                        <li role="presentation"><a data-target="#graphical" aria-controls="graphical" role="tab" data-toggle="tab">Graphical</a></li>
+                        <li role="presentation"><a data-target="#statistics" aria-controls="statistics" role="tab" data-toggle="tab">Statistics</a></li>
+                    </ul>
+                    <div class="tab-content" >
+                        <div role="tabpanel" class="tab-pane" id="jobActivity">
+                            <table class="table table-condensed">
+                                <thead><tr>
+                                        <!--<td>Status</td>-->
+                                        <th>Job title</th>
+                                        <th>Company</th>
+                                        <th>Date</th>
+                                    </tr></thead>
+                                <tbody>
+                                    <tr ng-repeat="attemp in jobsAttmpsHistory"> 
+                                        <!--<td>{{attemp.status}}</td>-->
+                                        <td>{{attemp.jobTitle}}</td>
+                                        <td>{{attemp.company}}</td>
+                                        <td>{{attemp.appliedDate}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="graphical"><div class="plotdiv col-md-12" id="831926d7-b020-4bc5-a270-a283fd8a25f4"></div></div>
+                        <div role="tabpanel" class="tab-pane text-uppercase grey-level1-text" id="statistics">
+                            <p class="statistics-text">Amount of attemps:
+                               143
+                            </p>
+                            <p class="statistics-text">Number of jobs available {{availableJobs.length}}</p>
+                            <p class="statistics-text">Days unemployed 143</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="boxcontainer">
+                    <h1 class="red-text">ADDRESS</h1>
+                    <div class="row">
+                        <div class="col-md-6" ng-if="!editContactDetails">{{user.street}}<br>{{user.city}}</div>
+                        <div class="col-md-6" ng-if="editContactDetails">
+                            <input type="text" ng-model="user.address" placeholder="Street">
+                            <input type="text" ng-model="user.city" placeholder="Postal code, City"></div>
+                        <div class="col-md-6">
+                            <div class="buttonwrap"  ng-if="!editContactDetails"><a class="ghostbutton" ng-click="editContactDetails = true;">EDIT ADDRESS</a></div>
+                            <div class="buttonwrap" ng-if="editContactDetails"><a class="ghostbutton" ng-click="editContactDetails = false;">OK</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxcontainer">
+                    <h1 class="red-text">BANK ACCOUNT</h1>
+                    <div class="row">
+                        <div class="col-md-6" ng-if="!editBankNo">{{user.bankNo}}</div>
+                        <div class="col-md-6" ng-if="editBankNo"><input type="text" placeholder="Bank Account Number" ng-model="user.bankNo"></div>
+                        <div class="col-md-6"><div class="buttonwrap">
+                                <a class="ghostbutton" ng-if="!editBankNo" ng-click="editBankNo = true;">EDIT BANK INFO</a>
+                                <!--<a class="ghostbutton" ng-if="editBankNo" ng-click="editBankNo = false;">OK</a>-->
+                            </div></div>
+                    </div>
+                </div>
+                <div class="boxcontainer">
+                    <h1 class="red-text">PHONE</h1>
+                    <div class="row">
+                        <div class="col-md-6">999 99 999</div>
+                        <div class="col-md-6"><div class="buttonwrap"><a class="ghostbutton">EDIT PHONE</a></div></div>
+                    </div>
+                </div>
+                <div class="boxcontainer">
+                    <h1 class="red-text">E-MAIL</h1>
+                    <div class="row">
+                        <div class="col-md-6">me@gmail.com</div>
+                        <div class="col-md-6"><div class="buttonwrap"><a class="ghostbutton">EDIT E-MAIL</a></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

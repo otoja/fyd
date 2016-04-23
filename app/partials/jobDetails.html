@@ -1,0 +1,43 @@
+<div class="modal fade " id="jobDetails" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" style="width:800px;">
+        <div class="modal-content">
+            <div class="modal-body" style="padding-top:0;padding-bottom: 0;">
+                <div class="row">
+                    <div class="col-md-8 grey-level3">
+                        <section class="text-justify"><h1>{{activeJob.title}}</h1>{{activeJob.description}}</section>
+                        <hr>
+                        <section class="text-justify"><h2>Duties</h2>{{activeJob.duties}}</section>
+                        <hr>
+
+                        <section class="text-justify"><h2>Required skills</h2>
+                            <ul class="skills-list">
+                                <li ng-repeat="skill in activeJob.skills">{{skill.label}}</li> 
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-md-4 grey-level1-text" >
+                        <section style="padding-top:10px">
+                            <p>Location: <br><strong>{{activeJob.location}}</strong></p>
+                        </section>
+                        <hr>
+                        <section>
+                            Contact person: 
+                            <address>
+                                <strong> {{activeJob.employer.contactPerson}}</strong><br>
+                                <a href="mailto:#">contact.person@example.com</a>
+                            </address>
+                            <address>
+                                <strong>{{activeJob.employer.company}}</strong><br>
+                                {{activeJob.employer.address}}<br>
+                                <abbr title="Phone">Tlf:</abbr> {{activeJob.employer.tel}}
+                            </address>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer red">
+                <h2 class="grey-level3-text text-center text-uppercase" ng-click="applyForJob(activeJob)">Apply for this job</h2>
+            </div>
+        </div>
+    </div>
+</div>

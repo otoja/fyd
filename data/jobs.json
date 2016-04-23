@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Senior Software Engineer",
+        "description": "Our developers build and create the technology on which much of the world’s energy supplies depend, fundamentally affecting the lives of hundreds of millions of people around the world. Our main products are RMS and Tempest, which are considered as among the best in class by users all over the world. Roxar Software Solutions has technology centers in Oslo and Stavanger where we develop high performance, interactive software for processing large volumes of scientific hydrocarbon reservoir data on powerful workstations. Our flagship products, RMS and Tempest, are highly rated by users all over the world. We look for enthusiastic developers to join the RMS team with the drive and ability to deliver reliable and attractive software for our clients around the world, whilst making a genuine contribution to our software engineering culture. Our project teams consist of highly skilled and motivated people across disciplines including domain experts, developers and testers. We work by agile methods and are determined to deliver code to the highest standards.We are now looking for a Senior Software Engineer for our RMS development team in Oslo.",
+        "expireDate": "13.05.2016",
+        "skills": [{
+                "id": 123,
+                "label": "C"
+            }, {
+                "id": 234,
+                "label": "3D Computer graphics OpenGL"
+            }],
+        "duties": "Analysis and Design. Analyze requirements and develop functional and technical specifications that provide solutions. User interface design and implementation Software development in C and Python. Profiling and optimizing Advanced debugging Team Work - work with other staff to efficiently and effectively coordinate work activities (SCRUM process)",
+        "employer":
+                {
+                    "company": "Roxar Software Solutions AS",
+                    "contactPerson": "Dariusz Bogacki",
+                    "tlf": "+47 22547857"
+                },
+        "location": "Oslo",
+        "industry": "IT"
+    }
+
+
+
+]
+

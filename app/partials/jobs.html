@@ -1,0 +1,38 @@
+<div class="red main-header">
+    <div class="center-block">
+        <p class="text-center header-text header-text">Similar people to you have filled positions like this.</p>
+        <p class="text-center header-text-bigger">HAPPY HUNTING / GOOD LUCK!</p>
+    </div>
+</div>
+<section id="intro" class="intro-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="center-block col-md-12 text-muted text-uppercase jobs-summary ">
+                <span ng-repeat="industry in availableIndustries track by $index"ng-style="{ 'font-size' : industry.amount>0 ?(10+(industry.amount))+'pt':'10pt' }">
+                    <span ng-class="'col-md-offset-2'" class="col-md-2">{{industry.amount}} - {{industry.name}}</span>
+                </span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-4 job-entity" ng-repeat="job in availableJobs" ng-cloack >
+                <div class="boxcontainer" ng-click="getJobDetails(job)">
+                    <p class="grey-level1-text col-md-12 job-title">{{job.title}}</p>
+                    <p class="job-description" ng-bind="cutDescription(job.description)"></p>
+                    <p class="row employer-data">
+                        <span class="col-md-12 text-smaller text-muted">Employer:</span>
+                        <span class="col-md-12 ">{{job.employer.company}}</span>
+                    </p>
+                    <div class="row deadline-data">
+                        <span class="col-md-8 text-muted">Place</span>
+                        <span class="col-md-4  text-muted">Deadline</span><br>
+                        <span class="col-md-8">{{job.location}}</span>
+                        <span class="col-md-4 ">{{job.expireDate}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div ng-include="'./app/partials/jobDetails.html'"></div>

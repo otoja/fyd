@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-04-21, 14:55:42
+    Author     : Kamila Przychodzen <kamila.przychodzen@gmail.com>
+*/
+
+.custom-ppt-container-graph {
+    background-color: inherit;
+    height: 750px;
+    padding: 0 0 0;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    overflow: hidden;
+}
