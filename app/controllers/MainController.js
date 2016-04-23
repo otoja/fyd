@@ -13,7 +13,7 @@ fyd.controller('MainController', function ($scope, $q, Auth, NEO4JService) {
 //    });
 //    
     var promisses = [];
-    promisses.push(NEO4JService.generateUeser());
+//    promisses.push(NEO4JService.generateUeser());
     promisses.push(NEO4JService.generateJobOffersFromJSON());
 
     $q.all(promisses).then(function(response){

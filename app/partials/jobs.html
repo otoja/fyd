@@ -9,7 +9,8 @@
         <div class="row">
             <div class="center-block col-md-12 text-muted text-uppercase jobs-summary ">
                 <span ng-repeat="industry in availableIndustries track by $index"ng-style="{ 'font-size' : industry.amount>0 ?(10+(industry.amount))+'pt':'10pt' }">
-                    <span ng-class="'col-md-offset-2'" class="col-md-2">{{industry.amount}} - {{industry.name}}</span>
+                   <span ng-if="$index===0" class="col-md-2 col-md-offset-2">{{industry.amount}} - {{industry.name}}</span>
+                    <span ng-if="$index!==0" class="col-md-2 col-md-offset-1">{{industry.amount}} - {{industry.name}}</span>
                 </span>
             </div>
         </div>
