@@ -20,11 +20,19 @@
                             <span class="skill-label ng-binding">{{selectedSkill.label}}</span>
                             <span class="skill-remove pull-right" ng-if="selectedSkill.remove"><i class="glyphicon glyphicon-remove-circle"  ng-click="removeSkill(selectedSkill)" ></i></span>
                             <span class="skill-level pull-right" >
-                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 1, 'glyphicon-star-empty':selectedSkill.level < 1 }" ng-click="updateSkill(selectedSkill, 1)" title="Beginner"></i>
-                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 2, 'glyphicon-star-empty':selectedSkill.level < 2 }" ng-click="updateSkill(selectedSkill, 2)" title="Novice"></i>
-                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 3, 'glyphicon-star-empty':selectedSkill.level < 3 }" ng-click="updateSkill(selectedSkill, 3)" title="Intermeddiate"></i><br>
-                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 4, 'glyphicon-star-empty':selectedSkill.level < 4 }" ng-click="updateSkill(selectedSkill, 4)" title="Advanced"></i>
-                                <i class="glyphicon" ng-class="{'glyphicon-star':selectedSkill.level >= 5, 'glyphicon-star-empty':selectedSkill.level < 5 }" ng-click="updateSkill(selectedSkill, 5)" title="Expert"></i>
+                                <i class="glyphicon" ng-class="{
+                                        'glyphicon-star'
+                                        :selectedSkill.level >= 1, 'glyphicon-star-empty':selectedSkill.level < 1 }" ng-click="updateSkill(selectedSkill, 1)" title="Beginner"></i>
+                                <i class="glyphicon" ng-class="{
+                                        'glyphicon-star':selectedSkill.level >= 2, 'glyphicon-star-empty':selectedSkill.level < 2 }" ng-click="updateSkill(selectedSkill, 2)" title="Novice"></i>
+                                <i class="glyphicon" ng-class="{
+                                        'glyphicon-star':selectedSkill.level >= 3, 'glyphicon-star-empty':selectedSkill.level < 3 }" ng-click="updateSkill(selectedSkill, 3)" title="Intermeddiate"></i><br>
+                                <i class="glyphicon" ng-class="{
+                                        'glyphicon-star'
+                                        :selectedSkill.level >= 4, 'glyphicon-star-empty':selectedSkill.level < 4 }" ng-click="updateSkill(selectedSkill, 4)" title="Advanced"></i>
+                                <i class="glyphicon" ng-class="{
+                                        'glyphicon-star'
+                                        :selectedSkill.level >= 5, 'glyphicon-star-empty':selectedSkill.level < 5 }" ng-click="updateSkill(selectedSkill, 5)" title="Expert"></i>
                             </span>
                         </div>  
                     </div>
@@ -74,45 +82,8 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="boxcontainer">
-                    <h1 class="red-text">ADDRESS</h1>
-                    <div class="row">
-                        <div class="col-md-6" ng-if="!editContactDetails">{{user.street}}<br>{{user.city}}</div>
-                        <div class="col-md-6" ng-if="editContactDetails">
-                            <input type="text" ng-model="user.address" placeholder="Street">
-                            <input type="text" ng-model="user.city" placeholder="Postal code, City"></div>
-                        <div class="col-md-6">
-                            <div class="buttonwrap"  ng-if="!editContactDetails"><a class="ghostbutton" ng-click="editContactDetails = true;">EDIT ADDRESS</a></div>
-                            <div class="buttonwrap" ng-if="editContactDetails"><a class="ghostbutton" ng-click="editContactDetails = false;">OK</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boxcontainer">
-                    <h1 class="red-text">BANK ACCOUNT</h1>
-                    <div class="row">
-                        <div class="col-md-6" ng-if="!editBankNo">{{user.bankNo}}</div>
-                        <div class="col-md-6" ng-if="editBankNo"><input type="text" placeholder="Bank Account Number" ng-model="user.bankNo"></div>
-                        <div class="col-md-6"><div class="buttonwrap">
-                                <a class="ghostbutton" ng-if="!editBankNo" ng-click="editBankNo = true;">EDIT BANK INFO</a>
-                                <!--<a class="ghostbutton" ng-if="editBankNo" ng-click="editBankNo = false;">OK</a>-->
-                            </div></div>
-                    </div>
-                </div>
-                <div class="boxcontainer">
-                    <h1 class="red-text">PHONE</h1>
-                    <div class="row">
-                        <div class="col-md-6">999 99 999</div>
-                        <div class="col-md-6"><div class="buttonwrap"><a class="ghostbutton">EDIT PHONE</a></div></div>
-                    </div>
-                </div>
-                <div class="boxcontainer">
-                    <h1 class="red-text">E-MAIL</h1>
-                    <div class="row">
-                        <div class="col-md-6">me@gmail.com</div>
-                        <div class="col-md-6"><div class="buttonwrap"><a class="ghostbutton">EDIT E-MAIL</a></div></div>
-                    </div>
-                </div>
+            <div class="col-md-4" ng-controller="ContactDetailsController">
+                <div ng-include=" './app/partials/profile/ContactDetails.html'"></div>
             </div>
         </div>
     </div>

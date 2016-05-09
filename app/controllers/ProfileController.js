@@ -11,11 +11,9 @@ fyd.controller('ProfileController', function ($scope, $q, UserProfileService, NE
 
     var skillsData = [];
 
-
-
     function addSkill(skill) {
         //return if already assigned
-        if (_.pluck($scope.userSkills, 'id').indexOf(skill.id) > -1)
+        if (_.pluck($scope.userSkills, 'name').indexOf(skill.name) > -1)
             return;
 
         skill.level = 0;
@@ -27,8 +25,7 @@ fyd.controller('ProfileController', function ($scope, $q, UserProfileService, NE
     ;
     $scope.updateSkill = function (selectedSkill, level) {
         selectedSkill.level = level;
-        UserProfileService.updateUserSkill($scope
-                .user, selectedSkill);
+        UserProfileService.updateUserSkill($scope.user, selectedSkill);
     };
 
 

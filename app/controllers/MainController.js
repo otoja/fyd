@@ -14,7 +14,7 @@ fyd.controller('MainController', function ($scope, $q, Auth, NEO4JService) {
 //    
     var promisses = [];
 //    promisses.push(NEO4JService.generateUeser());
-    promisses.push(NEO4JService.generateJobOffersFromJSON());
+   // promisses.push(NEO4JService.generateJobOffersFromJSON());
 
     $q.all(promisses).then(function(response){
         console.log("Data created in Neo4J");
@@ -32,5 +32,6 @@ fyd.controller('MainController', function ($scope, $q, Auth, NEO4JService) {
     $scope.user.bankNo = "3232 32 3232";
     $scope.user.phone = "999 99 999";
     $scope.user.mail = "deb@fyd.com";
+    $scope.user.relocate = true;
 
 });

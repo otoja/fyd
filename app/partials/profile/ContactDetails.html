@@ -1,0 +1,71 @@
+
+<div class="boxcontainer">
+    <h1 class="red-text">ADDRESS</h1>
+
+    <div class="row">
+        <div class="col-md-6" ng-if="!editContactDetails">{{user.street}}<br>{{user.city}}</div>
+        <div class="col-md-6" ng-if="editContactDetails">
+            <input type="text" ng-model="user.street" value="{{user.street}}" placeholder="Street">
+            <input type="text" ng-model="user.city" value="{{user.city}}" placeholder="Postal code, City"></div>
+        <div class="col-md-6">
+            <div class="buttonwrap"  ng-if="!editContactDetails"><a class="ghostbutton" ng-click="startEditingContactDetails()">EDIT ADDRESS</a></div>
+            <div class="buttonwrap" ng-if="editContactDetails"><a class="ghostbutton" ng-click="endEditingContactDetails()">Save</a> <a class="ghostbutton" ng-click="cancelEditingContactDetails()">Cancel</a></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="checkbox col-md-12">
+            <label>
+                <input ng-model="user.relocate" type="checkbox"> <strong>Willing to relocate</strong>
+            </label>
+        </div>
+    </div>
+
+</div>
+<div class="boxcontainer">
+    <h1 class="red-text">BANK ACCOUNT</h1>
+    <div class="row">
+        <div class="col-md-6" ng-if="!editBankNo">{{user.bankNo}}</div>
+        <div class="col-md-6" ng-if="editBankNo"><input type="text" placeholder="Bank Account Number" ng-model="user.bankNo"></div>
+        <div class="col-md-6">
+            <div class="buttonwrap" ng-if="!editBankNo">
+                <a class="ghostbutton"  ng-click="editBankDetails()">EDIT BANK INFO</a>
+            </div>
+            <div class="buttonwrap"  ng-if="editBankNo">
+                <a class="ghostbutton"  ng-click="endEditingBankDetails()">Save</a>
+                <a class="ghostbutton" ng-click="cancelEditingBankDetails()">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="boxcontainer">
+    <h1 class="red-text">PHONE</h1>
+    <div class="row">
+        <div class="col-md-6" ng-if="!editPhone">{{user.phone}}</div>
+        <div class="col-md-6" ng-if="editPhone"><input type="text" placeholder="Bank Account Number" ng-model="user.phone"></div>
+        <div class="col-md-6">
+            <div class="buttonwrap" ng-if="!editPhone">
+                <a class="ghostbutton"  ng-click="editPhoneDetails()">EDIT BANK INFO</a>
+            </div>
+            <div class="buttonwrap"  ng-if="editPhone">
+                <a class="ghostbutton"  ng-click="endEditingPhoneDetails()">Save</a>
+                <a class="ghostbutton" ng-click="cancelEditingPhoneDetails()">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="boxcontainer">
+    <h1 class="red-text">E-MAIL</h1>
+    <div class="row">
+        <div class="col-md-6" ng-if="!editMail">{{user.mail}}</div>
+        <div class="col-md-6" ng-if="editMail"><input type="email" placeholder="Email address" ng-model="user.mail"></div>
+        <div class="col-md-6">
+            <div class="buttonwrap" ng-if="!editMail">
+                <a class="ghostbutton"  ng-click="editMailDetails()">EDIT BANK INFO</a>
+            </div>
+            <div class="buttonwrap"  ng-if="editMail">
+                <a class="ghostbutton"  ng-click="endEditingMailDetails()">Save</a>
+                <a class="ghostbutton" ng-click="cancelEditingMailDetails()">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
