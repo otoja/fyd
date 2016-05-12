@@ -1,0 +1,6 @@
+
+pandas==0.18.1
+numpy==1.10
+sklearn==0.17.1
+Factory==1.2
+bokeh==0.11.1
