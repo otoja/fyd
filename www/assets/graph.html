@@ -1,0 +1,189 @@
+
+    
+    <style type="text/css">
+    
+    #d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df path.link {
+        fill: none;
+        stroke-width: 1.5px;
+    }
+    #d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df .node {
+        /*fill: #ccc;*/
+        stroke: #333;
+        stroke-width: 1.5px;
+    }
+    #d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df text {
+        font: 10px sans-serif;
+        pointer-events: none;
+    }
+    #d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df text.shadow {
+        stroke: #fff;
+        stroke-width: 3px;
+        stroke-opacity: .8;
+    }
+    #d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df .node.sticky {
+        /* stroke-width: 2px; */
+    }
+    
+    </style>
+
+    <div class="accordion">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+            </div>
+            <div id="d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df" class="accordion-body in collapse">
+                <div class="accordion-inner">
+                    <div id="d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df_d3c">
+                        <!--<select id="d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df_d3c_display">
+                            <option value="">ID</option>
+                        </select> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var neo4jrestclient = window.neo4jrestclient || {};
+        neo4jrestclient['a95121ca-2f02-11e6-810b-acbc32b7f7df'] = {};
+        neo4jrestclient['a95121ca-2f02-11e6-810b-acbc32b7f7df'].graph = {"directed": true, "links": [{"target": "242", "label": "REQUIRES", "source": "249", "stroke": "black", "id": "337", "properties": {"level": 3}}, {"target": "242", "label": "KNOWS", "source": "241", "stroke": "black", "id": "335", "properties": {"level": 5}}, {"target": "242", "label": "KNOWS", "source": "238", "stroke": "black", "id": "324", "properties": {"level": 3}}, {"target": "247", "label": "KNOWS", "source": "241", "stroke": "black", "id": "336", "properties": {"level": 3}}, {"target": "247", "label": "REQUIRES", "source": "250", "stroke": "black", "id": "338", "properties": {"level": 5}}, {"target": "248", "label": "REQUIRES", "source": "250", "stroke": "black", "id": "339", "properties": {"level": 5}}, {"target": "248", "label": "KNOWS", "source": "240", "stroke": "black", "id": "332", "properties": {"level": 4}}, {"target": "248", "label": "KNOWS", "source": "238", "stroke": "black", "id": "326", "properties": {"level": 1}}, {"target": "246", "label": "KNOWS", "source": "240", "stroke": "black", "id": "50", "properties": {"created": 1463601228252, "level": 4}}, {"target": "246", "label": "REQUIRES", "source": "250", "stroke": "black", "id": "340", "properties": {"level": 3}}, {"target": "245", "label": "OPTIONAL", "source": "251", "stroke": "black", "id": "344", "properties": {}}, {"target": "245", "label": "KNOWS", "source": "239", "stroke": "black", "id": "329", "properties": {"level": 5}}, {"target": "245", "label": "KNOWS", "source": "241", "stroke": "black", "id": "334", "properties": {"level": 4}}, {"target": "242", "label": "REQUIRES", "source": "251", "stroke": "black", "id": "341", "properties": {"level": 4}}, {"target": "243", "label": "OPTIONAL", "source": "251", "stroke": "black", "id": "342", "properties": {}}, {"target": "243", "label": "KNOWS", "source": "241", "stroke": "black", "id": "333", "properties": {"level": 2}}, {"target": "243", "label": "KNOWS", "source": "239", "stroke": "black", "id": "327", "properties": {"level": 4}}, {"target": "244", "label": "OPTIONAL", "source": "251", "stroke": "black", "id": "343", "properties": {}}, {"target": "244", "label": "KNOWS", "source": "239", "stroke": "black", "id": "328", "properties": {"level": 3}}, {"target": "244", "label": "KNOWS", "source": "238", "stroke": "black", "id": "325", "properties": {"level": 2}}], "multigraph": true, "graph": [], "nodes": {"245": {"properties": {"name": "Perl"}, "label": "Perl", "id": "245", "class": "Skill", "types": ["Skill"], "fill": "white"}, "244": {"properties": {"name": "Python"}, "label": "Python", "id": "244", "class": "Skill", "types": ["Skill"], "fill": "white"}, "247": {"properties": {"name": "HTML"}, "label": "HTML", "id": "247", "class": "Skill", "types": ["Skill"], "fill": "white"}, "246": {"properties": {"name": "JavaScript"}, "label": "JavaScript", "id": "246", "class": "Skill", "types": ["Skill"], "fill": "white"}, "238": {"properties": {"city": "Stavanger", "name": "John", "willingToRelocate": true}, "label": "John", "id": "238", "class": "Person", "types": ["Person"], "fill": "white"}, "240": {"properties": {"city": "Trondheim", "name": "Deb", "willingToRelocate": false}, "label": "Deb", "id": "240", "class": "Person", "types": ["Person"], "fill": "white"}, "243": {"properties": {"name": "Ruby"}, "label": "Ruby", "id": "243", "class": "Skill", "types": ["Skill"], "fill": "white"}, "242": {"properties": {"name": "Java"}, "label": "Java", "id": "242", "class": "Skill", "types": ["Skill"], "fill": "white"}, "241": {"properties": {"city": "Bergen", "name": "Mike", "willingToRelocate": true}, "label": "Mike", "id": "241", "class": "Person", "types": ["Person"], "fill": "white"}, "250": {"properties": {"city": "Bergen", "title": "Frontend Developer"}, "label": "Frontend Developer", "id": "250", "class": "Job", "types": ["Job"], "fill": "white"}, "251": {"properties": {"city": "Stavanger", "title": "Software Engineer"}, "label": "Software Engineer", "id": "251", "class": "Job", "types": ["Job"], "fill": "white"}, "249": {"properties": {"city": "Stavanger", "title": "Java Developer"}, "label": "Java Developer", "id": "249", "class": "Job", "types": ["Job"], "fill": "white"}, "248": {"properties": {"name": "CSS"}, "label": "CSS", "id": "248", "class": "Skill", "types": ["Skill"], "fill": "white"}, "239": {"properties": {"city": "Oslo", "name": "Kate", "willingToRelocate": false}, "label": "Kate", "id": "239", "class": "Person", "types": ["Person"], "fill": "white"}}, "properties": ["city", "title", "name", "willingToRelocate"]};
+        neo4jrestclient['a95121ca-2f02-11e6-810b-acbc32b7f7df'].container_id = "d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df_d3c";
+        neo4jrestclient['a95121ca-2f02-11e6-810b-acbc32b7f7df'].container = "#d3_id_a95121ca-2f02-11e6-810b-acbc32b7f7df_d3c";
+        neo4jrestclient['a95121ca-2f02-11e6-810b-acbc32b7f7df'].render = function () {
+            (function (graph, container, width, height) {
+                
+    var links = graph.links;
+    var nodes = graph.nodes;
+
+    // Compute the distinct nodes from the links.
+    links.forEach(function(link) {
+        link.source = (nodes[link.source] ||
+                       (nodes[link.source] = {name: link.source}));
+        link.target = (nodes[link.target] ||
+                       (nodes[link.target] = {name: link.target}));
+    });
+
+    var w = 800, h = 600;
+
+    var force = d3.layout.force()
+        .nodes(d3.values(nodes))
+        .links(links)
+        .size([w, h])
+        .linkDistance(200)
+        .charge(-300)
+        .on("tick", tick)
+        .start();
+
+    var svg = d3.select(container).append("svg:svg")
+        .attr("width", w)
+        .attr("height", h);
+
+    // Per-type markers, as they don't inherit styles.
+    svg.append("svg:defs").selectAll("marker")
+        .data(["arrow"])
+        .enter().append("svg:marker")
+        .attr("id", String)
+        .attr("viewBox", "0 -5 10 10")
+        .attr("refX", 35)
+        .attr("refY", -1.5)
+        .attr("markerWidth", 6)
+        .attr("markerHeight", 6)
+        .attr("orient", "auto")
+        .append("svg:path")
+        .attr("d", "M0,-5L10,0L0,5");
+
+    var path = svg.append("svg:g").selectAll("path")
+        .data(force.links())
+        .enter().append("svg:path")
+        .attr("class", function(d) { return "link " + d.stroke; })
+        .attr("stroke", function(d) { return d.stroke; })
+        .attr("marker-end", function(d) { return "url(#arrow)"; });
+
+    var circle = svg.append("svg:g").selectAll("circle")
+        .data(force.nodes())
+        .enter().append("svg:circle")
+        .attr("fill", function(d){ return d.types.indexOf("Person")>-1 ? "yellow" : d.types.indexOf("Skill") > -1? "green" : "red";})
+        .attr("r", function(d){ return d.types.indexOf("Person")>-1?30:d.types.indexOf("Skill")>-1?25:20;})
+        .attr("class", function(d) { return "node "+d.class; })
+        .call(force.drag)
+        .on("mousedown", function(d) {
+            d.fixed = true;
+            d3.select(this).classed("sticky", true);
+        });
+
+    var text = svg.append("svg:g").selectAll("g")
+        .data(force.nodes())
+        .enter().append("svg:g");
+
+    // A copy of the text with a thick white stroke for legibility.
+    text.append("svg:text")
+        .attr("x", 8)
+        .attr("y", ".31em")
+        .attr("class", "shadow")
+        .text(function(d) { return d.label; });
+
+    text.append("svg:text")
+        .attr("x", 8)
+        .attr("y", ".31em")
+        .attr("class", "front")
+        .text(function(d) { return d.label; });
+
+    // Use elliptical arc path segments to doubly-encode directionality.
+    function tick() {
+        path.attr("d", function(d) {
+            var dx = d.target.x - d.source.x,
+            dy = d.target.y - d.source.y,
+            dr = Math.sqrt(dx * dx + dy * dy);
+            return ("M" + d.source.x + "," + d.source.y + "A"
+                    + dr + "," + dr + " 0 0,1 " + d.target.x + ","
+                    + d.target.y);
+        });
+
+        circle.attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
+
+        text.attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
+    }
+
+    // Display options
+    var display = $(container + "_display");
+    graph.properties.forEach(function (property) {
+        var option = $("<OPTION/>");
+        option.text(property);
+        option.attr("value", property);
+        display.append(option);
+    });
+    display.on("change", function () {
+        var selected = $(this).find(":selected").val(),
+            displayFunc;
+        if (selected.length !== 0) {
+            displayFunc = function(d) {
+                return d.properties[selected];
+            }
+        } else {
+            displayFunc = function(d) {
+                return d.label;
+            }
+        }
+        text.select("text.front").text(displayFunc);
+        text.select("text.shadow").text(displayFunc);
+    });
+    
+            })(
+                neo4jrestclient['a95121ca-2f02-11e6-810b-acbc32b7f7df'].graph,
+                neo4jrestclient['a95121ca-2f02-11e6-810b-acbc32b7f7df'].container,
+                400,
+                400
+            );
+        }
+        if (!window.d3) {
+            $.getScript(
+                "//d3js.org/d3.v2.js?2.9.1",
+                neo4jrestclient['a95121ca-2f02-11e6-810b-acbc32b7f7df'].render
+            );
+        } else {
+            neo4jrestclient['a95121ca-2f02-11e6-810b-acbc32b7f7df'].render();
+        }
+    </script>

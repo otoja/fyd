@@ -1,0 +1,131 @@
+
+.red-text{color: rgb(175, 5, 16)}
+.red{background-color: rgb(175, 5, 16)}
+.orange-text{
+    color: #FF704D;
+}
+
+.navbar {
+    color:white;
+}
+
+.section{
+    position: relative;
+    z-index: 1;
+    padding-top: 25px;
+    padding-bottom: 200px
+}
+.section-content {
+    margin-right: auto;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+.section-headline{
+    font-size: 42px;
+    line-height: 1.0625;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+.section-subheadline{
+    font-size:32px;
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: -0.008em;
+    text-align: justify;
+}
+figure{
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+.header-image{
+    background-size: 900px auto;
+    min-height: 800px;
+    height:auto;
+    width: 100%;
+    max-width:100%;
+    background-image: url("../img/SearchingJobRear.jpg");
+}
+.section-image{
+    top: -25px;
+    background-size: 500px 400px;
+    height: 400px;
+    max-width:100%;
+    width: 500px;
+}
+.section-right{
+    top: -25px; 
+    left: 650px;
+}
+.section-right-image{
+    left: 0px;
+}
+.section1-image{
+    background-image: url("../img/CelebrationJobSearch.jpg");
+}
+.section2-image{
+    background-image: url("../img/skills.jpg");
+    margin-left: 40px;
+}
+.full-div {
+    height:100vh;
+    width: 100%;
+    background: url('../images/header.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    padding-top:80px;
+    padding-bottom: 20px;
+}
+
+.boxcontainer {
+    background-color:#f8f8f8;
+    padding:2px 15px 20px 15px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px #ddd;
+    /*box-shadow:*/ 
+}
+.skills-box{
+    min-height: 200px;
+    background-color: white;
+    border:1px solid #D9D9D9;
+    margin-top:45px;
+}
+.label-light{
+    display: inline-block;
+    border: 1px solid #D9D9D9;
+    margin: 5px;
+    color:#5A5A5A;
+    background-color: #f8f8f8;
+}
+.skill-label{
+    line-height: 25px;
+    font-size: 10pt;
+    vertical-align: baseline;
+
+}
+.skill-level{
+    font-size: 10px;
+    padding: 3px 3px 3px 15px;
+    text-align: center;
+    min-width: 42px !important;
+}
+
+.skill-remove{
+    z-index: 10000;
+    padding: 0;
+    font-size: 12pt;
+    margin: -8px -12px;
+}
+.ui-autocomplete
+{
+    position:absolute;
+    cursor:default;
+    z-index:1001 !important
+}

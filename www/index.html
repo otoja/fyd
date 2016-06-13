@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>FYD</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="fyd">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css" rel="stylesheet">
+        <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row ">
+                <div class=" navbar navbar-fixed-top red">
+                    <div class="navbar-header">
+                        <h1 >
+                            &nbsp;NAV 2.0 <small style="color: white">Stavanger Hackathon Solution</small>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container full-div">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <section class="section">
+                            <div class="section-content">
+                                <figure class="header-image"></figure>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container full-div">
+                <div class="row">
+                    <div class="">
+                        <section class="section">
+                            <div class="section-content">
+                                <div class="row" >
+                                    <div class=" col-md-6">
+                                        <h2 class="section-headline">Personalized Experience</h2>
+                                        <p class="section-subheadline">We aim to reshape the NAV experience as personable and specific to each customer's unique background. List your skills and rank your level of proficiency in the auto-completion widget.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="skillsBox" ng-app="skillsWidget">
+                                            <div >
+                                                <div ng-controller="SkillsController" class="boxcontainer" >
+                                                    <h1 class="orange-text">SKILLS</h1>
+                                                    <p>Put in your skills and rank how proficient you are at each type of skill. More skills = more opportunities.</p>
+                                                    <input class="col-md-12" id="skills" placeholder="What is your expertise?" />
+                                                    <div class="skills-box ng-scope" >
+                                                        <div class="label label-light" ng-repeat="selectedSkill in userSkills" ng-mouseenter="selectedSkill.remove = true" ng-mouseleave="selectedSkill.remove = false;">
+                                                            <span class="skill-label ng-binding">{{selectedSkill.label}}</span>
+                                                            <span class="skill-remove pull-right" ng-if="selectedSkill.remove"><i class="glyphicon glyphicon-remove-circle"  ng-click="removeSkill(selectedSkill)" ></i></span>
+                                                            <span class="skill-level pull-right" >
+                                                                <i class="glyphicon" ng-class="{
+                            'glyphicon-star'
+                            :selectedSkill.level >= 1, 'glyphicon-star-empty':selectedSkill.level < 1 }" ng-click="updateSkill(selectedSkill, 1)" title="Beginner"></i>
+                                                                <i class="glyphicon" ng-class="{
+                            'glyphicon-star':selectedSkill.level >= 2, 'glyphicon-star-empty':selectedSkill.level < 2 }" ng-click="updateSkill(selectedSkill, 2)" title="Novice"></i>
+                                                                <i class="glyphicon" ng-class="{
+                            'glyphicon-star':selectedSkill.level >= 3, 'glyphicon-star-empty':selectedSkill.level < 3 }" ng-click="updateSkill(selectedSkill, 3)" title="Intermeddiate"></i><br>
+                                                                <i class="glyphicon" ng-class="{
+                            'glyphicon-star'
+                            :selectedSkill.level >= 4, 'glyphicon-star-empty':selectedSkill.level < 4 }" ng-click="updateSkill(selectedSkill, 4)" title="Advanced"></i>
+                                                                <i class="glyphicon" ng-class="{
+                            'glyphicon-star'
+                            :selectedSkill.level >= 5, 'glyphicon-star-empty':selectedSkill.level < 5 }" ng-click="updateSkill(selectedSkill, 5)" title="Expert"></i>
+                                                            </span>
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="container full-div">
+                <div class="row">
+                    <section class="section ">
+                        <div class="section-content">
+                            <div class="row section-right" >
+
+                                <div class="col-sm-12 col-md-12">
+                                    <h2 class="section-headline">Be one step ahead</h2>
+                                    <p class="section-subheadline">Learn where you stand in the NAV job market. We equip you with visual aids to mine the job market at your own convenience.</p>
+                                </div>
+                                <div id="graph"></div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="container full-div">
+                <div class="row">
+                    <div class="">
+                        <section class="section">
+                            <div class="section-content">
+                                <div class="row" >
+                                    <div class="col-md-12">
+                                        <h2 class="section-headline">Equipped with Intelligent Power Tools</h2>
+                                        <p class="section-subheadline">We provide machine learning technology as a powerful management tool to make predictions for fast-paced, changing conditions.</p>
+                                    </div>
+                                </div>
+                                <div id="d7fb458d-7de5-48ac-a0b7-f577fe3066a9"></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="navbar navbar-fixed-bottom red">
+                    <div class="">
+                        <p class="grey-level2-text navbar-text pull-left">© 2016 - Site Built By FYD Stavanger Hackathon Team
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+        
+        <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js" type="text/javascript"></script>
+        <script src="./assets/skills.js" type="text/javascript"></script>
+        <script src="./assets/bokeh.js" type="text/javascript"></script>
+        <script>
+            $("#graph").load("./assets/graph.html");
+        </script>
+    </body>
+</html>
